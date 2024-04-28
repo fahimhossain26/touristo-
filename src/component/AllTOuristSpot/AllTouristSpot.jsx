@@ -1,10 +1,11 @@
-import React from 'react';
+import  { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import TouristCard from '../All tourist card/TouristCard';
 import Navber from "../navber/Navber";
 const AllTouristSpot = () => {
 
-    const touristSpots=useLoaderData()
+    const touristSpots=useLoaderData();
+    const [tourSpot,setTOurSpot]=useState(touristSpots);
     return (
         <div>
             <Navber></Navber>
@@ -14,8 +15,10 @@ const AllTouristSpot = () => {
 
             <div className="grid md:grid-cols-3  gap-10 ">
             {
-                touristSpots.map(touristSpot=><TouristCard  key={touristSpot._id}
+                tourSpot.map(touristSpot=><TouristCard  key={touristSpot._id}
                     touristSpot={touristSpot}
+                    tourSpot={tourSpot}
+                    setTOurSpot={setTOurSpot}
                 ></TouristCard>)
             }
             </div>

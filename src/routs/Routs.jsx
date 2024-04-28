@@ -14,6 +14,7 @@ import UpdateProfile from "../component/updateProfile/UpdateProfile";
 import UpdateTuristSpot from "../component/updateTuristSpot/UpdateTuristSpot";
 import AllTouristSpot from "../component/AllTOuristSpot/AllTouristSpot";
 import TouristCardDetails from "../component/AllTOuristSpot/TouristCardDetails";
+import UpdadeSinleSpot from "../component/updateTuristSpot/UpdadeSinleSpot";
 
 const routs = createBrowserRouter([
     {
@@ -42,10 +43,10 @@ const routs = createBrowserRouter([
                 path: '/contact',
                 element: <Contact></Contact>
             },
-            {
-                path: '/updateProfile',
-                element: <UpdateProfile></UpdateProfile>
-            },
+            // {
+            //     path: '/updateProfile',
+            //     element: <UpdateProfile></UpdateProfile>
+            // },
             { 
 
                 path:'/allTouristSpot',
@@ -83,12 +84,18 @@ const routs = createBrowserRouter([
                     <UpdateTuristSpot></UpdateTuristSpot>
                 </PrivateRoute>
             },
-            // {
-            // path:'/updateTourSpot',
-            // element:
+            {
+            path:'/updateSingleSpot/:id',
+            element: <UpdadeSinleSpot></UpdadeSinleSpot>,
+            // <PrivateRoute>
+        //      <UpdadeSinleSpot></UpdadeSinleSpot>
+        // </PrivateRoute>,
+
+        loader:({params})=>fetch(`http://localhost:5000/touristSpot/${params.id}`),
+           
 
 
-            // }
+            }
         
         ]
     }

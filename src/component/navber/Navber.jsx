@@ -26,7 +26,7 @@ const Navber = () => {
       user &&   <li><NavLink to={'/addTuristSpot'}>ADD Tourist Spot</NavLink></li> 
    }
     {/* {
-      user &&   <li><NavLink to={'/updateProfile'}>Update Profile</NavLink></li> 
+      user &&   <li><NavLink to={`/updateSingleSpot`}>Update Tourist spot</NavLink></li> 
    } */}
 
    {

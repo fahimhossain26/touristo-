@@ -31,8 +31,9 @@ import Aos from "aos";
 import 'aos/dist/aos.css'
 
 import { useEffect } from "react";
+import { key } from "localforage";
 
-const TouristCard = ({touristSpot}) => {
+const TouristCard = ({touristSpot ,tourSpot,setTOurSpot}) => {
 
     const {_id,tourisSptName, photoUrl,description,cost,visitorCount,visitingTime,
         travelTime}=touristSpot;
@@ -67,6 +68,8 @@ Swal.fire({
             text: "Your file has been deleted.",
              icon: "success"
            });
+           const remaining =tourSpot.filter( tour => tour._id !== _id);
+           setTOurSpot(remaining);
       }
     })
   }
@@ -89,13 +92,15 @@ Swal.fire({
     <p className="flex items-center gap-2 font-bold">  <span className="text-4xl"><MdSupervisedUserCircle  /></span>  total visitors per year  :{visitorCount}</p>
     <div className="flex justify-between mt-3">
     <div className="card-actions justify-start">
-    {/* <Link to={`/touristCardDetails/${_id}`}>   <button className="btn  bg-orange-400 ">View Details</button></Link> */}
+    <Link to={`/touristCardDetails/${_id}`}>   <button className="btn  bg-orange-400 ">View Details</button></Link>
     </div>
     <div> <p className="font-bold text-xl"> Price : {cost}</p> </div>
     </div>
     <div className="flex gap-5">
         <button className="btn">view </button>
+        <Link to={`/updateSingleSpot/${_id}`}> 
         <button className="btn">Edit</button>
+        </Link>
         <button 
         onClick={()=>handelDelete(_id)}
         className="btn bg-red-500">X</button>
