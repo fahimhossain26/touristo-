@@ -28,7 +28,7 @@ const Footer = () => {
     </div>
   </nav> 
   <aside>
-    <p>Copyright © 2024 - All right reserved by Rstate Company  Ltd</p>
+    <p>Copyright © 2024 - All right reserved by TORISTIO Ltd</p>
   </aside>
 </footer>
         </div>
