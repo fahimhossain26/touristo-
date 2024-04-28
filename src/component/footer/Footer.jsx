@@ -16,9 +16,9 @@ const Footer = () => {
     <NavLink to={'/contact'}>Contact</NavLink>
     <NavLink to={'/register'}>register</NavLink>
     
-   {
+   {/* {
     user &&   <NavLink to={'/userProfile'}>User profile</NavLink>
-   }
+   } */}
   </nav> 
   <nav>
     <div className="grid grid-flow-col gap-4">
@@ -28,7 +28,9 @@ const Footer = () => {
     </div>
   </nav> 
   <aside>
+
     <p>Copyright © 2024 - All right reserved by TORISTIO Ltd</p>
+
   </aside>
 </footer>
         </div>

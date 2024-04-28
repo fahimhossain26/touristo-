@@ -9,7 +9,7 @@ const Team = () => {
 
             <div className="text-center mb-10 mt-10">
                 <h2 className="text-xl">Team Members</h2>
-                <h3 className="text-6xl font-serif mb-5  animate__animated animate__flipInX">Our Professional Team</h3>
+                <h3 className="text-6xl font-serif mb-5  animate__animated animate__flipInX">Our Professional Guide </h3>
         
             </div>
         <div className="   grid md:grid-cols-3  gap-5 m-5 ">

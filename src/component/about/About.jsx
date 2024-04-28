@@ -13,7 +13,7 @@ const About = () => {
            
 <div>
     
-<div className="hero h-96" style={{backgroundImage: 'url(https://i.postimg.cc/2Sh2BDwZ/park-house-02-841x533.jpg)'}}>
+<div className="hero h-96" style={{backgroundImage: 'url(https://i.postimg.cc/4d3Vr4xT/TAL-koh-phi-phi-PLACESTHAILAND1023-09b9d347b3cd4844b4ae19e4e06a9a6d.jpg)'}}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
@@ -31,8 +31,8 @@ const About = () => {
 <div className="hero  ">
   <div className="hero-content text-center">
     <div className="max-w-md">
-      <h1 className="text-5xl font-bold">Our Company Achievements</h1>
-      <p className="py-6">Industrial Strength, Global Impact</p>
+      <h1 className="text-5xl font-bold">Our tour placces</h1>
+      <p className="py-6">Tour  Fresh your mind  Strength, Global Impact</p>
     
       {/* <div className="  grid md:grid-cols-3  gap-5 ">
 

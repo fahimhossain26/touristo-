@@ -17,7 +17,7 @@ import { useEffect, useState } from 'react';
 export const Carousel7 = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
   // The slider images array
-  const sliderImages = ['https://i.postimg.cc/nL72DCVk/American-Warehouses-Blog-The-Best-Approach-To-Leasing-Warehouse-Space.webp','https://i.postimg.cc/44FfYdYq/pexels-pixabay-269077-1200x800-jpg.webp','https://i.postimg.cc/pXpDjpqF/Advantages-of-Industrial-Buildings-1.jpg','https://i.postimg.cc/bNNmByLy/10-Indoor-coffee-bar.jpg','https://i.postimg.cc/K88CB7C5/28.webp'];
+  const sliderImages = ['https://i.postimg.cc/0ybmfhmj/Sundarban-Luxury-Ship.png','https://i.postimg.cc/2Ssqxyr9/Rangamati-hanging-Bridge-2019-12-24-12-47-02.jpg','https://i.postimg.cc/Dfx8MB7X/360-F-494056979-Pye-IPy-JMSMtagg-Cxa-Keeuq-ZAHfa3wygu.jpg','https://i.postimg.cc/zXM3JvbD/1878484-Saint-Martins-Island-Bangladesh.jpg','https://i.postimg.cc/0ybmfhmj/Sundarban-Luxury-Ship.png'];
   const prevSlider = () => {
     setCurrentSlider((currentSlider) => (currentSlider === 0 ? sliderImages.length - 1 : currentSlider - 1));
   };
