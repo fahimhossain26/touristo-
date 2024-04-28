@@ -1,0 +1,91 @@
+[
+    {
+      "id": "001",
+      "type": "Office_Building",
+      "description": "Modern office building with state-of-the-art facilities, located in the business district.",
+      "photo": "https://i.postimg.cc/K88CB7C5/28.webp",
+      "price": "$10,000,000",
+      "shape":" 5000",
+
+      "status": "Sale",
+      "segment_name": "Residential",
+     "location": "Downtown District, New York City",
+      "facilities": ["Spacious office  room", "Fully-equipped kitchen", "Large windows with city views", "Access to rooftop terrace", "Fitness center", "24/7 security"]
+
+      
+    },
+ 
+    {
+      "id": "002",
+      "type": "retail_space",
+      "description": "Spacious retail space in a busy shopping mall, suitable for various businesses.",
+      "photo": "https://i.postimg.cc/Vv9jgZ5H/apple-retail-biophilic.jpg",
+      "price": "$2,500,000",
+      "shape":" 8000",
+
+      "status": "Rant",
+   "segment_name": "Residential",
+  "location": " Toranto , New York ",
+   "facilities": [ "Large windows with city views", "Access to rooftop terrace",  "24/7 security"]
+    },
+  
+    {
+      "id": "003",
+      "type": "warehouse",
+      "description": "Large warehouse facility with loading docks and ample storage space.",
+      "photo": "https://i.postimg.cc/Sss5w8cr/large-clean-warehouse-with-racks-of-storage-and-shiny-floors.jpg",
+      "price": "$5,000,000",
+      "shape":" 2500",
+
+
+      "status": "Sale",
+ "segment_name": "Residential",
+"location": "Downtown Dr , Canada",
+ "facilities": [ "Fully-equipped kitchen", "Large windows with city views", "Access to rooftop terrace",  "24/7 security"]
+    },
+  
+    {
+      "id": "301",
+      "type": "industrial_facility",
+      "description": "Versatile industrial facility with manufacturing capabilities and logistics support.",
+      "photo": "https://i.postimg.cc/pXpDjpqF/Advantages-of-Industrial-Buildings-1.jpg",
+      "price": "$7,200,000",
+      "shape":" 3000",
+
+      "status": "Sale",
+ "segment_name": "Residential",
+"location": "Fokirapul ,Dhaka, ",
+ "facilities": ["Spacious working  room",  "Large windows with city views", "Access to rooftop terrace", "24/7 security"]
+    },
+   
+    {
+      "id": "401",
+      "type": "restaurant",
+      "description": "Charming restaurant offering a diverse menu and cozy ambiance.",
+      "photo": "https://i.postimg.cc/gJ1xhVDt/restaurant.jpg",
+      "price": "$1,200,000",
+      "shape":" 4000",
+
+      "status": "Sale",
+ "segment_name": "Residential",
+"location": "Uttora , Dhaka ",
+ "facilities": [ "Fully-equipped kitchen", "Large windows with city views", "Access to rooftop terrace", "24/7 security"]
+    },
+   
+    {
+      "id": "501",
+      "type": "entertainment_venue",
+      "description": "Iconic concert hall renowned for its acoustics and world-class performances.",
+      "photo": "https://i.postimg.cc/CLg1VL68/St-Louis-Armory-2.jpg",
+      "price": "$20,000,000",
+      "shape":" 4500",
+
+      "status": "Sale",
+ "segment_name": "Residential",
+"location": "gulsahan1 , dhaka ",
+ "facilities": ["Spacious decorate  room", "Fully-equipped kitchen", "Access to rooftop terrace",  "24/7 security"]
+
+    }
+  
+  ]
+  
