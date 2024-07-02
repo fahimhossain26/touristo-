@@ -1,6 +1,8 @@
 import React from 'react';
 import Navber from '../navber/Navber';
 import Swal from 'sweetalert2'
+import {useNavigate,useLocation, Link} from 'react-router-dom';
+// import { useLocation, useNavigate } from 'react-router-dom';
 
 
 const UpdateTuristSpot = () => {
@@ -19,6 +21,11 @@ const UpdateTuristSpot = () => {
         const newTouristSpot = { tourisSptName, photoUrl, description, cost, visitorCount, visitingTime, travelTime };
         console.log(newTouristSpot);
 
+//             //navigation sytem 
+//   const navigate=useNavigate()
+//   const location=useLocation()
+//   const from = location ?.state || "/";
+
         //send data to the  server 
         fetch('http://localhost:5000/touristSpot', {
             method: 'POST',
@@ -31,14 +38,19 @@ const UpdateTuristSpot = () => {
             .then(data => {
                 console.log(data);
                 if (data.insertedId) {
+
+
                    
-                    Swal.fire({
+                      Swal.fire({
                         // position: "top-end",
                         icon: "success",
                         title: "palce added successfully",
                         ConfirmButtonText: 'cool'
                        
                     });
+                   
+                   
+                   
                 }
             })
     }
@@ -144,6 +156,9 @@ const UpdateTuristSpot = () => {
                     </div>
 
                     {/* <button className="btn btn-block">block</button> */}
+                    {/* <Link to={'/allTouristSpot'}>
+                    <input type="submit" value="Add Place " className="btn btn-block bg-blue-400" />
+                    </Link> */}
                     <input type="submit" value="Add Place " className="btn btn-block bg-blue-400" />
                 </form>
             </div>
